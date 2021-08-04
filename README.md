@@ -8,7 +8,7 @@
 
 ## Project Descriptions
 
-#### neopaginal.command
+#### **neopaginal.command**
 This crawls a given page requested times( Default 3 ) in succession and stores maintained data to MongoDB.
 Keys; 
 - Golang
@@ -20,7 +20,8 @@ Keys;
 - CQRS ( 3.Level of CQRS : separated storage - https://levelup.gitconnected.com/3-cqrs-architectures-that-every-software-architect-should-know-a7f69aae8b6c)
 - Docker
 
-#### neopaginal.passanger
+
+#### **neopaginal.passanger**
 This reads data from MongoDB, enriches them and write to projection database that is Elasticsearch as bulk. 
 - Golang
 - Golang Naming Convension Best Practices (https://stackoverflow.com/questions/25161774/what-are-conventions-for-filenames-in-go/25162021)
@@ -29,7 +30,7 @@ This reads data from MongoDB, enriches them and write to projection database tha
 - CQRS ( 3.Level of CQRS : separated storage - https://levelup.gitconnected.com/3-cqrs-architectures-that-every-software-architect-should-know-a7f69aae8b6c)
 - Docker
 
-#### neopaginal.query.api
+#### **neopaginal.query.api**
 This is restful web api that datasource is Elasticsearch 
 - Nodejs
 - Restful Web Api with Express
