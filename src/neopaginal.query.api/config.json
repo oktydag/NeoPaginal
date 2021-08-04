@@ -1,7 +1,7 @@
 {
   "ApplicationSettings": {
     "ElasticNodes": [
-      "http://localhost:9200"
+      "http://elastic:9200"
     ],
     "ElasticIndexName": "crawl_v1",
     "Authentication": {

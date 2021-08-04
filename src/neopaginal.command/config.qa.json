@@ -2,7 +2,7 @@
   "ApplicationSettings" : {
     "InitialSchema" : "https",
     "InitialHostName": "www.cnnturk.com",
-    "MongoDBAddress" : "mongodb://localhost:27017",
+    "MongoDBAddress" : "mongodb://mongo:27017",
     "MongoDBDatabaseName" : "PageCrawl",
     "MaxCrawlLimit" : 3
   }

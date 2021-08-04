@@ -1,0 +1,45 @@
+version: "3"
+
+services:
+    mongo:
+        image: mongo:4.1
+        container_name: neopaginal
+        ports:
+            - "27017:27017"
+    elastic:
+        image: elasticsearch:7.14
+        container_name: neopaginal
+        ports:
+            - "9200:9200"
+    
+    neopaginal-command:
+        build:
+          context: "./neopaginal.command"
+        depends_on:
+            - "mongo"
+        ports:
+            - "5001:5001"
+        links: 
+            - "mongo"
+
+    neopaginal-passanger:
+        build:
+          context: "./neopaginal.passanger"
+        depends_on:
+            - "mongo"
+            - "elastic"
+        ports:
+            - "5002:5002" 
+        links: 
+            - "mongo"
+            - "elastic"
+
+    neopaginal-query-api:
+        build:
+          context: "./neopaginal.query.api"
+        depends_on:
+            - "elastic"
+        ports:
+            - "5003:5003" 
+        links: 
+            - "elastic"
