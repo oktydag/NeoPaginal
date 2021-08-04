@@ -1,0 +1,28 @@
+{
+  "name": "PageCrawler.Projection.Api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oktydag/PageCrawler.Projection.Api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oktydag/PageCrawler.Projection.Api/issues"
+  },
+  "homepage": "https://github.com/oktydag/PageCrawler.Projection.Api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "elasticsearch": "^16.7.2",
+    "express": "^4.17.1",
+    "fastify": "^3.20.0",
+    "swagger": "^0.7.5",
+    "swagger-ui-express": "^4.1.6"
+  }
+}

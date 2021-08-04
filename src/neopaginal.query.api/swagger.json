@@ -1,0 +1,97 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a Crawl Server",
+    "version": "1.0.5",
+    "title": "Swagger Crawl",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "apiteam@swagger.io"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "",
+  "tags": [
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/api/v1/crawl/bound-counts": {
+      "get": {
+        "tags": [
+          "crawls"
+        ],
+        "summary": "Crawls",
+        "operationId": "crawls",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array"
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/api/v1/crawl": {
+
+      "get": {
+        "parameters": [
+          {
+            "name": "url",
+            "in": "query",
+            "description": "url that you want to crawl",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "crawls"
+        ],
+        "summary": "Crawls",
+        "operationId": "crawls",
+        "produces": [
+          "application/json",
+          "application/xml"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array"
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "header"
+    }
+  },
+  "definitions": {
+
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
+}
