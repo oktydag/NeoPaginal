@@ -3,12 +3,12 @@ version: "3"
 services:
     mongo:
         image: mongo:4.1
-        container_name: neopaginal
+        container_name: neopaginal-mongo
         ports:
             - "27017:27017"
     elastic:
         image: docker.elastic.co/elasticsearch/elasticsearch:7.6.2
-        container_name: neopaginal
+        container_name: neopaginal-elastic
         ports:
             - "9200:9200"
     
