@@ -6,7 +6,7 @@ class CrawlService {
         const body = { }
 
         try {
-            var source = ["CrawledUrl", "InBoundCount", "OutBoundCount"]
+            var source = ["CrawledUrl", "InBoundCount", "OutBoundCount", "Urls"]
             const resp = await searchDoc(config.ApplicationSettings.ElasticIndexName, body,source );
             var result = resp.hits.hits.map(hit => hit._source);
 
