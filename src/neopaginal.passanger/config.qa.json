@@ -1,0 +1,11 @@
+{
+  "ApplicationSettings": {
+    "MongoDBAddress": "mongodb://localhost:27017",
+    "MongoDBDatabaseName": "PageCrawl",
+    "ElasticNodes": [
+      "http://localhost:9200"
+    ],
+    "ElasticIndexName": "crawl_v1",
+    "ChunkSize": 100
+  }
+}
