@@ -42,7 +42,7 @@ This is restful web api that datasource is Elasticsearch
 
 ### Run microservices
 
-In directory that contains tye.yaml;
+In directory that contains docker-compose.yaml;
 
 <pre> $ docker-compose up --build
 </pre>
